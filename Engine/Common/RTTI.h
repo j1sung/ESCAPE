@@ -2,7 +2,7 @@
 
 #include "Common/Common.h"
 
-namespace Escape
+namespace Dark
 {
 	class DARK_API RTTI
 	{

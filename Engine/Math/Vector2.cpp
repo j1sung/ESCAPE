@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-namespace Escape
+namespace Dark
 {
 	Vector2 Vector2::Zero(0, 0);
 

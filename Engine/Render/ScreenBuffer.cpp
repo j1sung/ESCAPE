@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-namespace Escape
+namespace Dark
 {
 	ScreenBuffer::ScreenBuffer(const Vector2& screenSize)
 		: screenSize(screenSize)

@@ -4,7 +4,7 @@
 
 #include <Windows.h>
 
-namespace Escape
+namespace Dark
 {
 	/*
 	* 작성자 : 안지성

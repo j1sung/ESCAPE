@@ -4,7 +4,7 @@
 #include "Math/Vector2.h"
 #include "Math/Color.h"
 
-namespace Escape
+namespace Dark
 {
 	// 전방 선언.
 	class Level;

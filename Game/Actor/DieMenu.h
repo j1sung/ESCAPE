@@ -3,7 +3,7 @@
 #include "Actor/Actor.h"
 #include "Data/GameData.h"
 
-using namespace Escape;
+using namespace Dark;
 
 class DieMenu : public Actor
 {

@@ -2,7 +2,7 @@
 
 #include "Common/Common.h"
 
-namespace Escape
+namespace Dark
 {
 	// 전방 선언
 	class Input;

@@ -4,7 +4,7 @@
 
 #include <iostream>
 
-namespace Escape
+namespace Dark
 {
 	Renderer::Frame::Frame(int bufferCount)
 	{

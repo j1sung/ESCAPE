@@ -5,7 +5,7 @@
 
 #include <time.h>
 
-using namespace Escape;
+using namespace Dark;
 
 // 헬퍼(Helper)기능 제공.
 namespace Util

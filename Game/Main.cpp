@@ -6,7 +6,7 @@
 
 #include <iostream>
 
-using namespace Escape;
+using namespace Dark;
 
 int main()
 {

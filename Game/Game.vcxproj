@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="Debug|Win32">
@@ -101,7 +101,7 @@
       <AdditionalLibraryDirectories>..\Library\Engine\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy ..\Library\Engine\$(Platform)\$(Configuration)\Engine.dll $(OutDir)\ /e /y</Command>
+      <Command>"C:\Windows\System32\xcopy.exe" "..\Library\Engine\$(Platform)\$(Configuration)\Engine.dll" "$(OutDir)" /e /y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -121,7 +121,7 @@
       <AdditionalLibraryDirectories>..\Library\Engine\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy ..\Library\Engine\$(Platform)\$(Configuration)\Engine.dll $(OutDir)\ /e /y</Command>
+      <Command>"C:\Windows\System32\xcopy.exe" "..\Library\Engine\$(Platform)\$(Configuration)\Engine.dll" "$(OutDir)" /e /y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -139,7 +139,7 @@
       <AdditionalLibraryDirectories>..\Library\Engine\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy ..\Library\Engine\$(Platform)\$(Configuration)\Engine.dll $(OutDir)\ /e /y</Command>
+      <Command>"C:\Windows\System32\xcopy.exe" "..\Library\Engine\$(Platform)\$(Configuration)\Engine.dll" "$(OutDir)" /e /y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -159,42 +159,29 @@
       <AdditionalLibraryDirectories>..\Library\Engine\$(Platform)\$(Configuration)\</AdditionalLibraryDirectories>
     </Link>
     <PostBuildEvent>
-      <Command>xcopy ..\Library\Engine\$(Platform)\$(Configuration)\Engine.dll $(OutDir)\ /e /y</Command>
+      <Command>"C:\Windows\System32\xcopy.exe" "..\Library\Engine\$(Platform)\$(Configuration)\Engine.dll" "$(OutDir)" /e /y</Command>
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Actor\Black.cpp" />
     <ClCompile Include="Actor\DieMenu.cpp" />
-    <ClCompile Include="Actor\Enemy.cpp" />
-    <ClCompile Include="Actor\EnemyBullet.cpp" />
-    <ClCompile Include="Actor\EnemyDestroyEffect.cpp" />
-    <ClCompile Include="Actor\EnemySpawner.cpp" />
-    <ClCompile Include="Actor\Player.cpp" />
-    <ClCompile Include="Actor\PlayerBullet.cpp" />
     <ClCompile Include="Actor\Wall.cpp" />
-    <ClCompile Include="Actor\White.cpp" />
     <ClCompile Include="Level\GameLevel.cpp" />
     <ClCompile Include="Level\LevelManager.cpp" />
     <ClCompile Include="Level\MenuLevel.cpp" />
     <ClCompile Include="Main.cpp" />
+    <ClCompile Include="Navigation\AStar.cpp" />
     <ClCompile Include="Util\Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Actor\Black.h" />
     <ClInclude Include="Actor\DieMenu.h" />
-    <ClInclude Include="Actor\Enemy.h" />
-    <ClInclude Include="Actor\EnemyBullet.h" />
-    <ClInclude Include="Actor\EnemyDestroyEffect.h" />
-    <ClInclude Include="Actor\EnemySpawner.h" />
-    <ClInclude Include="Actor\Player.h" />
-    <ClInclude Include="Actor\PlayerBullet.h" />
     <ClInclude Include="Actor\Wall.h" />
-    <ClInclude Include="Actor\White.h" />
     <ClInclude Include="Data\GameData.h" />
     <ClInclude Include="Interface\ICanMove.h" />
     <ClInclude Include="Level\GameLevel.h" />
     <ClInclude Include="Level\LevelManager.h" />
     <ClInclude Include="Level\MenuLevel.h" />
+    <ClInclude Include="Navigation\AStar.h" />
+    <ClInclude Include="Navigation\Node.h" />
     <ClInclude Include="Util\Timer.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

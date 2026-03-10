@@ -2,7 +2,7 @@
 
 #include "Actor/Actor.h"
 
-using namespace Escape;
+using namespace Dark;
 
 class Wall : public Actor
 {

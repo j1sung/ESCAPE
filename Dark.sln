@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.14.36908.2 d17.14
+VisualStudioVersion = 17.14.36908.2
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Engine", "Engine\Engine.vcxproj", "{72ECD585-F9E9-42B3-8C07-35D1361C9ABC}"
 EndProject
@@ -9,6 +9,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "Game\Game.vcxproj",
 	ProjectSection(ProjectDependencies) = postProject
 		{72ECD585-F9E9-42B3-8C07-35D1361C9ABC} = {72ECD585-F9E9-42B3-8C07-35D1361C9ABC}
 	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "AStarPathFinding", "AStarPathFinding\AStarPathFinding.vcxproj", "{74AA260B-963D-467D-8312-2F17B56F41BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,6 +26,10 @@ Global
 		{DE953469-980E-4362-ABFF-CFF484756210}.Debug|x64.Build.0 = Debug|x64
 		{DE953469-980E-4362-ABFF-CFF484756210}.Release|x64.ActiveCfg = Release|x64
 		{DE953469-980E-4362-ABFF-CFF484756210}.Release|x64.Build.0 = Release|x64
+		{74AA260B-963D-467D-8312-2F17B56F41BE}.Debug|x64.ActiveCfg = Debug|x64
+		{74AA260B-963D-467D-8312-2F17B56F41BE}.Debug|x64.Build.0 = Debug|x64
+		{74AA260B-963D-467D-8312-2F17B56F41BE}.Release|x64.ActiveCfg = Release|x64
+		{74AA260B-963D-467D-8312-2F17B56F41BE}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

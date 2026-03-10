@@ -5,7 +5,7 @@
 #include "Util/Util.h"
 
 
-using namespace Escape;
+using namespace Dark;
 
 struct MenuItem
 {

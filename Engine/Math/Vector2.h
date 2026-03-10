@@ -4,7 +4,7 @@
 
 #include <Windows.h>
 
-namespace Escape
+namespace Dark
 {
 	class DARK_API Vector2
 	{

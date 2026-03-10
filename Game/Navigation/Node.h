@@ -2,7 +2,7 @@
 
 #include "Math/Vector2.h"
 
-using namespace Dark;
+using namespace EscapeEngine;
 
 class Node
 {

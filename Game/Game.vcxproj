@@ -163,8 +163,6 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Actor\DieMenu.cpp" />
-    <ClCompile Include="Actor\Wall.cpp" />
     <ClCompile Include="Level\GameLevel.cpp" />
     <ClCompile Include="Level\LevelManager.cpp" />
     <ClCompile Include="Level\MenuLevel.cpp" />
@@ -173,10 +171,6 @@
     <ClCompile Include="Util\Timer.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Actor\DieMenu.h" />
-    <ClInclude Include="Actor\Wall.h" />
-    <ClInclude Include="Data\GameData.h" />
-    <ClInclude Include="Interface\ICanMove.h" />
     <ClInclude Include="Level\GameLevel.h" />
     <ClInclude Include="Level\LevelManager.h" />
     <ClInclude Include="Level\MenuLevel.h" />

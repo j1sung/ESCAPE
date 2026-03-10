@@ -3,7 +3,7 @@
 #include "Common/Common.h"
 #include "Math/Vector2.h"
 
-namespace Dark
+namespace EscapeEngine
 {
 	class DARK_API Input
 	{

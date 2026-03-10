@@ -2,11 +2,10 @@
 
 #include "Engine/Engine.h"
 #include "Level/Level.h"
-#include "Data/GameData.h"
 
 #include <vector>
 
-using namespace Dark;
+using namespace EscapeEngine;
 
 enum class State
 { 
@@ -35,9 +34,4 @@ private:
 
 	// 현재 활성화된 레벨을 나타내는 상태 변수
 	State current = State::GamePlay;
-
-public:
-	inline GameData& GetGameData() { return data; }
-private:
-	GameData data;
 };

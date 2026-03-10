@@ -6,7 +6,7 @@
 #include <iostream>
 #include <cassert>
 
-namespace Dark
+namespace EscapeEngine
 {
 	// 전역 변수 초기화.
 	Input* Input::instance = nullptr;

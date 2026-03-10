@@ -33,6 +33,15 @@ public:
 	AStar();
 	~AStar();
 
+	// 탐색 시작 함수.
+	void Initialize(
+		const Vector2& startPosition,
+		const Vector2& goalPosition
+	);
+
+	// 탐색을 한 단계 진행하는 함수.
+	bool Step(std::vector<std::vector<int>>& grid);
+
 	// 경로 검색(탐색) 함수.
 	// startPosition: 시작 지점.
 	// goalPosition: 목표 지점.
@@ -45,6 +54,12 @@ public:
 
 	// 내부 데이터 초기화 함수.
 	void Reset();
+
+	// 상태 확인 함수.
+	inline bool IsSearching() const { return isSearching; }
+	inline bool IsFinished() const { return isFinished; }
+	inline bool HasFoundPath() const { return hasFoundPath; }
+	inline const std::vector<Node*>& GetPath() const { return path; }
 
 private:
 	// 탐색을 완료한 후에 최적 경로 반환하는 함수.
@@ -78,4 +93,12 @@ private:
 
 	// 목표 노드.
 	Node* goalNode = nullptr;
+
+	// 최종 경로.
+	std::vector<Node*> path;
+
+	// 탐색 상태.
+	bool isSearching = false;
+	bool isFinished = false;
+	bool hasFoundPath = false;
 };

@@ -6,7 +6,7 @@
 #include <Windows.h>
 #include <vector>
 
-namespace Dark
+namespace EscapeEngine
 {
 	// 전방 선언, 콘솔 버퍼를 관리하는 클래스.
 	class ScreenBuffer;

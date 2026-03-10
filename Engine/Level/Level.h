@@ -4,7 +4,7 @@
 
 #include <vector>
 
-namespace Dark
+namespace EscapeEngine
 {
 	// 전방 선언.
 	class Actor;

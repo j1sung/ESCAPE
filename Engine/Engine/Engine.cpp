@@ -7,7 +7,7 @@
 #include <iostream>
 #include <Windows.h>
 
-namespace Dark
+namespace EscapeEngine
 {
 	// 정적 변수 초기화.
 	Engine* Engine::instance = nullptr;

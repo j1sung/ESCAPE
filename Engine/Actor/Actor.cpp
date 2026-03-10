@@ -6,7 +6,7 @@
 #include <iostream>
 #include <Windows.h>
 
-namespace Dark
+namespace EscapeEngine
 {
 	static void ComputeImageSize(const char* image, int& outWidth, int& outHeight)
 	{
